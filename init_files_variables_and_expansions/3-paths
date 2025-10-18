@@ -1,4 +1,2 @@
 #!/bin/bash
-# count non-empty entries in $PATH
-echo "$PATH" | tr ':' '\n' | grep -v '^$' | wc -l
-
+echo "$PATH" | tr ':' '\n' | wc -l
