@@ -1,2 +1,15 @@
 #!/bin/bash
-declare -p
+
+# Affiche les variables locales
+echo "### Local variables ###"
+declare
+
+echo
+# Affiche les variables d'environnement
+echo "### Environment variables ###"
+declare -x
+
+echo
+# Affiche les fonctions shell
+echo "### Functions ###"
+declare -f
